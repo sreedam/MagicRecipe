@@ -35,7 +35,7 @@ public class RecipeTest {
 		
 //		assertFalse(list.iterator().hasNext());
 //		assertFalse(list.iterator().hasNext());
-		assertEquals(list, list.indexOf("11"));  //checking the size
+		assertEquals(10, list.size());  //checking the size
 		
 		
 	}
