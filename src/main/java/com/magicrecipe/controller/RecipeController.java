@@ -23,18 +23,13 @@ public class RecipeController {
 	}
 
 	@RequestMapping(value = "/search", method = RequestMethod.GET)
-	public String shows(Model model,@RequestParam(name="p",required=true)int p ,@RequestParam(name = "ingredients", required = true) String ingredients,HttpServletRequest request) {
+	public String shows(Model model, @RequestParam(name = "p", required = true) int p,
+			@RequestParam(name = "ingredients", required = true) String ingredients, HttpServletRequest request) {
 
-			
-		
-model.addAttribute("ingredients",ingredients);
-		model.addAttribute("results", this.recipeService.getResultsByRecipe(ingredients,p).subList(0,10));
+		model.addAttribute("ingredients", ingredients);
+		model.addAttribute("results", this.recipeService.getResultsByRecipe(ingredients, p).subList(0, 10));
 
 		return "searchresult";
 	}
-	
-	
-	
-	
-	
+
 }
