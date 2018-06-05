@@ -6,12 +6,7 @@ Also i have added CustomResponseEntityExceptionHandler to handle exception like 
 
 How it works:
 
-<<<<<<< HEAD
 Front Page is search page where all ingridients needs to be typed with comma separated.After successful search it will list down all the recipient available for that ingridients.If click on particular recipient it redirect to another page for more detail.
-=======
-<<<<<<< HEAD
-Front Page is search page where all ingridients needs to be typed with comma separated.After successful search it will list down all the recipient available for that ingridients.If click on particular recipient it redirect to another page for more detail.
-=======
-Front Page is search page where all ingridients needs to be typed with comma separated.After successful search it will list down all the recipient available for that ingridients.If click on particular recipient it redirect to another page for more detail.
->>>>>>> recent updation
->>>>>>> tmp
+Also pagination is implemented in recipe search result.
+
+
