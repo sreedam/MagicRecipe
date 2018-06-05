@@ -1,7 +1,7 @@
 # MagicRecipe
 I have created a POJO i.e Recipe and Result
 Using RestTemplate I am handling the http://www.recipepuppy.com/api/ with parameter passing in it.
-Also i have added MessageConverter to support all mediaType
+Also i have added MessageConverter to support all mediaType 
 Also i have added CustomResponseEntityExceptionHandler to handle exception like 500 error,not found.
 
 How it works:
