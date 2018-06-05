@@ -45,35 +45,53 @@
 
 
                     <div class="col-md-12">
-                   
+                    
               
-               <div class="col-md-12 " style="background:rgba(255, 255, 255, 0.5);">
+               <div class="col-md-12 ">
                    <div class="">
+                 <ul class="pagination">
+  
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=1"></spring:url>'>1</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=2"></spring:url>'>2</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=3"></spring:url>'>3</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=4"></spring:url>'>4</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=5"></spring:url>'>5</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=6"></spring:url>'>6</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=7"></spring:url>'>7</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=8"></spring:url>'>8</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=9"></spring:url>'>9</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=10"></spring:url>'>10</a></li>
+ 
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=11"></spring:url>'>11</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=12"></spring:url>'>12</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=13"></spring:url>'>13</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=14"></spring:url>'>14</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=15"></spring:url>'>15</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=16"></spring:url>'>16</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=17"></spring:url>'>17</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=18"></spring:url>'>18</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=19"></spring:url>'>19</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=20"></spring:url>'>20</a></li>
+ <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=21"></spring:url>'>21</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=22"></spring:url>'>22</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=23"></spring:url>'>23</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=24"></spring:url>'>24</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=25"></spring:url>'>25</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=26"></spring:url>'>26</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=27"></spring:url>'>27</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=28"></spring:url>'>28</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=29"></spring:url>'>29</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=30"></spring:url>'>30</a></li>
+ 
+  
+</ul>
                                      
                                                  </div>
+                                                 
                                                  </div>
 	
 	
-	
-	
-	
-	<%@ taglib prefix="tg" tagdir="/WEB-INF/tags"%>
-
-													<jsp:useBean id="pagedListHolder" scope="request"
-														type="org.springframework.beans.support.PagedListHolder" />
-													<%-- // create link for pages, "~" will be replaced later on with the proper page number --%>
-													<c:url value="/Recruiter/RecruiterLogin/SearchCandidate2"
-														var="pagedLink">
-														<c:param name="action" value="list" />
-														<c:param name="p" value="~" />
-													</c:url>
-
-
-													<%-- // load our paging tag, pass pagedListHolder and the link --%>
-													<ul class="">
-														<tg:paging pagedListHolder="${pagedListHolder}"
-															pagedLink="${pagedLink}" />
-													</ul>
+	 
              
 <c:if test="${!empty results }">
 <c:forEach items="${results}" var="items">
@@ -146,6 +164,48 @@
   
   </c:forEach>
   </c:if>
+     <div class="col-md-12 ">
+                   <div class="">
+                 <ul class="pagination">
+  
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=1"></spring:url>'>1</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=2"></spring:url>'>2</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=3"></spring:url>'>3</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=4"></spring:url>'>4</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=5"></spring:url>'>5</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=6"></spring:url>'>6</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=7"></spring:url>'>7</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=8"></spring:url>'>8</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=9"></spring:url>'>9</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=10"></spring:url>'>10</a></li>
+ 
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=11"></spring:url>'>11</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=12"></spring:url>'>12</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=13"></spring:url>'>13</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=14"></spring:url>'>14</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=15"></spring:url>'>15</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=16"></spring:url>'>16</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=17"></spring:url>'>17</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=18"></spring:url>'>18</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=19"></spring:url>'>19</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=20"></spring:url>'>20</a></li>
+ <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=21"></spring:url>'>21</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=22"></spring:url>'>22</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=23"></spring:url>'>23</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=24"></spring:url>'>24</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=25"></spring:url>'>25</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=26"></spring:url>'>26</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=27"></spring:url>'>27</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=28"></spring:url>'>28</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=29"></spring:url>'>29</a></li>
+  <li class="page-item"><a class="page-link" href='<spring:url value="/search?ingredients=${ingredients}&p=30"></spring:url>'>30</a></li>
+ 
+  
+</ul>
+                                     
+                                                 </div>
+                                                 
+                                                 </div>
   </div>
   
  </section>

@@ -6,7 +6,7 @@ import com.magicrecipe.model.Result;
 
 public interface RecipeService {
 
-	List<Result> getResultsByRecipe(String recipe);
+	List<Result> getResultsByRecipe(String recipe,int pageno);
 	
 //	Flux<Result> getResultsFromRecipient(String recipient);
 

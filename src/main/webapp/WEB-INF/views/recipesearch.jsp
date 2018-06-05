@@ -48,12 +48,13 @@
 			<div class="w3-padding w3-display-middle">
 
 				<div class="form-group">
-					<form method="post"
+					<form method="get"
 						action='<spring:url value="/search"></spring:url>'>
 						<div class="row">
-							<label>Search Recipes(comma separated)</label> <input type="text"
+							<label>Search Recipes(comma separated)</label> 
+							<input type="text"
 								name="ingredients" id="ingredients" class="form-control">
-
+<input type="hidden" name="p" value="1">
 						</div>
 						<div class="row pull-right">
 							<input type="submit" value="search" id="search"
