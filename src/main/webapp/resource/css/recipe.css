@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> tmp
  .recipe-directory .recipe-group .media-heading {
     font-size: 20px !important;
     font-weight: 500;
@@ -33,13 +39,29 @@ html {
 }
 body {
     color:#767676;
+<<<<<<< HEAD
     background:#F1F2F2;
+=======
+>>>>>>> tmp
     font-family:'Open Sans',sans-serif;
     padding:0px !important;
     margin:0px !important;
     font-size:13px;
     text-rendering:optimizeLegibility;
     overflow-x:hidden;
+<<<<<<< HEAD
+=======
+    
+    
+    background-image: url("/resource/images/eat.jpg");
+  background-position: top center;
+  background-attachment: fixed;
+  background-repeat:repeat;
+  background-size: cover;
+  background-color: #000;
+  position: relative;
+  height:100vh;
+>>>>>>> tmp
 }
 
 ul, .list-unstyled {

@@ -7,7 +7,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script src="<spring:url value="/resource/js/jquery-3.3.1.min.js" />"
@@ -21,7 +21,8 @@
 	type="text/javascript"></script>
 <script src="<spring:url value="/resource/js/popper.min.js" />"
 	type="text/javascript"></script>
-
+<link href="<spring:url value="/resource/css/search.css"/>"
+	rel="stylesheet" />
 
 <title>Magic Recipe</title>
 
@@ -34,11 +35,12 @@
 
 
 
+
 </head>
 <body>
 	<nav class="navbar navbar-light bg-light"> <a
 		class="navbar-brand" href="#"> <img
-		src='<spring:url value="/resource/images/recipe.svg"></spring:url>'
+		src='<spring:url value="/resource/images/logo.png"></spring:url>'
 		width="30" height="30" class="d-inline-block align-top" alt="">
 		Magic Recipe
 	</a> </nav>
@@ -48,17 +50,22 @@
 			<div class="w3-padding w3-display-middle">
 
 				<div class="form-group">
-					<form method="post"
+					<form method="get"
 						action='<spring:url value="/search"></spring:url>'>
 						<div class="row">
-							<label>Search Recipes(comma separated)</label> <input type="text"
-								name="ingredients" id="ingredients" class="form-control">
-
+							<label class="text-white"><h3>Search Recipes(comma separated)</h3></label> 
+							<input  type="text" required="requuired"
+								name="ingredients" id="ingredients" style="-webkit-tap-highlight-color: transparent;" class="sbq">
+<input type="hidden" name="p" value="1">
 						</div>
-						<div class="row pull-right">
+						<div class="row">
+						<div class="col-sm-5">
+						</div>
+						<div class="col-sm-6">
 							<input type="submit" value="search" id="search"
-								class="btn btn-default btn-xs">
-						</div>
+								class="btn btn-primary btn-xs">
+								</div>
+								</div>
 					</form>
 				</div>
 
