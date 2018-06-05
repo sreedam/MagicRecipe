@@ -4,7 +4,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.stereotype.Service;
@@ -41,12 +44,28 @@ public class RecipeServiceImpl implements RecipeService {
 		converter.setSupportedMediaTypes(Arrays.asList(MediaType.ALL));
 		messageConverters.add(converter);
 		
-		
+//		
 		this.restTemplate.setMessageConverters(messageConverters);
-
-		final Recipe recipe = this.restTemplate.getForObject("http://www.recipepuppy.com/api/?i=" + search,
-				Recipe.class);
-		return recipe.getResults();
+//
+//		final Recipe recipe = this.restTemplate.getForObject("http://www.recipepuppy.com/api/?i=" + search,
+//				Recipe.class);
+//		
+		
+		final ResponseEntity<Recipe> rateResponse =
+		        restTemplate.exchange("http://www.recipepuppy.com/api/?i=" + search,
+		                    HttpMethod.GET, null, new ParameterizedTypeReference<Recipe>() {
+		            });
+		final Recipe rates = rateResponse.getBody();
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		return rates.getResults();
 	}
 
 	
