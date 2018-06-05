@@ -1,0 +1,10 @@
+body{
+background-image: url("/resource/images/recipesearch.jpg");
+  background-position: top center;
+  background-attachment: fixed;
+  background-repeat:repeat;
+  background-size: cover;
+  background-color: #000;
+  position: relative;
+  height:100vh;
+}

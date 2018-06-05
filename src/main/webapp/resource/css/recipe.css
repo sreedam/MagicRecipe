@@ -1,3 +1,6 @@
+
+
+
  .recipe-directory .recipe-group .media-heading {
     font-size: 20px !important;
     font-weight: 500;
@@ -33,13 +36,22 @@ html {
 }
 body {
     color:#767676;
-    background:#F1F2F2;
     font-family:'Open Sans',sans-serif;
     padding:0px !important;
     margin:0px !important;
     font-size:13px;
     text-rendering:optimizeLegibility;
     overflow-x:hidden;
+    
+    
+    background-image: url("/resource/images/eat.jpg");
+  background-position: top center;
+  background-attachment: fixed;
+  background-repeat:repeat;
+  background-size: cover;
+  background-color: #000;
+  position: relative;
+  height:100vh;
 }
 
 ul, .list-unstyled {

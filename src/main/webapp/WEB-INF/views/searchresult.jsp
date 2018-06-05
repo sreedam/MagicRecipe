@@ -33,7 +33,7 @@
 <body>
 <nav class="navbar navbar-light bg-light"> <a
 		class="navbar-brand" href="#"> <img
-		src='<spring:url value="/resource/images/recipe.svg"></spring:url>'
+		src='<spring:url value="/resource/images/logo.png"></spring:url>'
 		width="30" height="30" class="d-inline-block align-top" alt="">
 		Magic Recipe
 	</a> </nav>
