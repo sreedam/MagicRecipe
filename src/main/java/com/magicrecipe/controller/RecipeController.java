@@ -44,10 +44,10 @@ public class RecipeController {
 			model.addAttribute("pagedListHolder", pagelist);
 		
 		
-		
+		System.out.println("Results is ::::"+results.size());
 		
 
-		model.addAttribute("results", this.recipeService.getResultsByRecipe(ingredients));
+		model.addAttribute("results", this.recipeService.getResultsByRecipe(ingredients).subList(0,10));
 
 		return "searchresult";
 	}

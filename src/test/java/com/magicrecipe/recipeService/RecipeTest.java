@@ -32,7 +32,10 @@ public class RecipeTest {
 	public void testRecipes()throws Exception
 	{
 		final List<Result> list = recipeService.getResultsByRecipe("potato,chips");
-		assertEquals(list, list.size()==3);  //checking the size
+		
+//		assertFalse(list.iterator().hasNext());
+//		assertFalse(list.iterator().hasNext());
+		assertEquals(list, list.indexOf("11"));  //checking the size
 		
 		
 	}
