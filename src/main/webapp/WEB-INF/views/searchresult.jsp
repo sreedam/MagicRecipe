@@ -387,7 +387,23 @@ a.thumbnail {
 	
 	
 	
-	
+	<%@ taglib prefix="tg" tagdir="/WEB-INF/tags"%>
+
+													<jsp:useBean id="pagedListHolder" scope="request"
+														type="org.springframework.beans.support.PagedListHolder" />
+													<%-- // create link for pages, "~" will be replaced later on with the proper page number --%>
+													<c:url value="/Recruiter/RecruiterLogin/SearchCandidate2"
+														var="pagedLink">
+														<c:param name="action" value="list" />
+														<c:param name="p" value="~" />
+													</c:url>
+
+
+													<%-- // load our paging tag, pass pagedListHolder and the link --%>
+													<ul class="">
+														<tg:paging pagedListHolder="${pagedListHolder}"
+															pagedLink="${pagedLink}" />
+													</ul>
              
 <c:if test="${!empty results }">
 <c:forEach items="${results}" var="items">

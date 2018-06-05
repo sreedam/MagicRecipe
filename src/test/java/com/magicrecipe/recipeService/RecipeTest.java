@@ -31,7 +31,7 @@ public class RecipeTest {
 	@Test
 	public void testRecipes()throws Exception
 	{
-		final List<Result> list = recipeService.getResultsByRecipe("onions,garlic");
+		final List<Result> list = recipeService.getResultsByRecipe("potato,chips");
 		assertEquals(list, list.size()==3);  //checking the size
 		
 		

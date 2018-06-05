@@ -41,9 +41,9 @@ public class RecipeServiceImpl implements RecipeService {
 		converter.setSupportedMediaTypes(Arrays.asList(MediaType.ALL));
 		messageConverters.add(converter);
 		this.restTemplate.setMessageConverters(messageConverters);
-		final Recipe recipe = this.restTemplate
-				.getForObject("http://www.recipepuppy.com/api/?i=" + search, Recipe.class);
+		final Recipe recipe = this.restTemplate.getForObject("http://www.recipepuppy.com/api/?i=" + search, Recipe.class);
 		System.out.println("Title is :::" + recipe.getTitle());
+		
 		return recipe.getResults();
 	}
 
