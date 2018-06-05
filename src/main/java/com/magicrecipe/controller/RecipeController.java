@@ -31,4 +31,7 @@ public class RecipeController {
 
 		return "searchresult";
 	}
+	
+	
+	
 }

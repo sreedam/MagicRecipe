@@ -43,7 +43,7 @@
 		Magic Recipe
 	</a> </nav>
 	<div class="container">
-		<div class="w3-display-container  " style="height: 700px;">
+		<div class="w3-display-container" style="height: 700px;">
 
 			<div class="w3-padding w3-display-middle">
 
@@ -55,9 +55,9 @@
 								name="ingredients" id="ingredients" class="form-control">
 
 						</div>
-						<div class="row">
+						<div class="row pull-right">
 							<input type="submit" value="search" id="search"
-								class="btn btn-default btn-sm pull-right">
+								class="btn btn-default btn-xs">
 						</div>
 					</form>
 				</div>
