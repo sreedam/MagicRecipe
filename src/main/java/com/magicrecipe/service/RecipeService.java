@@ -4,12 +4,10 @@ import java.util.List;
 
 import com.magicrecipe.model.Result;
 
-import reactor.core.publisher.Flux;
-
 public interface RecipeService {
 
 	List<Result> getResultsByRecipe(String recipe);
 	
-	Flux<Result> getResultsFromRecipient(String recipient);
+//	Flux<Result> getResultsFromRecipient(String recipient);
 
 }
