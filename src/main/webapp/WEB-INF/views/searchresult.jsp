@@ -26,14 +26,6 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<<<<<<< HEAD
-<style type="text/css">
-
-
-</style>
-=======
-
->>>>>>> tmp
 
 <title>Search Result</title>
 </head>
