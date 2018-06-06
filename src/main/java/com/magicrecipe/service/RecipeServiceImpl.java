@@ -52,11 +52,9 @@ public class RecipeServiceImpl implements RecipeService {
 //		
 		
 		final ResponseEntity<Recipe> rateResponse =
-<<<<<<< HEAD
-		        restTemplate.exchange("http://www.recipepuppy.com/api/?i=" + search+"&q=&p=2",
-=======
+
 		        restTemplate.exchange("http://www.recipepuppy.com/api/?i=" + search+"&q=&p="+pageno,
->>>>>>> tmp
+
 		                    HttpMethod.GET, null, new ParameterizedTypeReference<Recipe>() {
 		            });
 		final Recipe rates = rateResponse.getBody();
