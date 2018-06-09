@@ -54,7 +54,7 @@
 						action='<spring:url value="/search"></spring:url>'>
 						<div class="row">
 							<label class="text-white"><h3>Search Recipes(comma separated)</h3></label> 
-							<input  type="text" required="requuired"
+							<input  type="text" required="required"
 								name="ingredients" id="ingredients" style="-webkit-tap-highlight-color: transparent;" class="sbq">
 <input type="hidden" name="p" value="1">
 						</div>

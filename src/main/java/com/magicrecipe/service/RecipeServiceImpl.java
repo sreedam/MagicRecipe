@@ -27,7 +27,7 @@ public class RecipeServiceImpl implements RecipeService {
 	}
 
 	@Override
-	public List<Result> getResultsByRecipe(String search,int pageno) {
+	public List<Result> getResultsByRecipe(String search,String query,int pageno) {
 		// TODO Auto-generated method stub
 		final List<HttpMessageConverter<?>> messageConverters = new ArrayList<HttpMessageConverter<?>>();
 

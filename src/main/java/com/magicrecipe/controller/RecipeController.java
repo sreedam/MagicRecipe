@@ -27,7 +27,7 @@ public class RecipeController {
 			@RequestParam(name = "ingredients", required = true) String ingredients, HttpServletRequest request) {
 
 		model.addAttribute("ingredients", ingredients);
-		model.addAttribute("results", this.recipeService.getResultsByRecipe(ingredients, p).subList(0, 10));
+		model.addAttribute("results", this.recipeService.getResultsByRecipe(ingredients,ingredients, p));
 
 		return "searchresult";
 	}

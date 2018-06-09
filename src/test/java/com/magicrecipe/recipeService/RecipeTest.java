@@ -31,7 +31,7 @@ public class RecipeTest {
 	@Test
 	public void testRecipes()throws Exception
 	{
-		final List<Result> list = recipeService.getResultsByRecipe("potato,chips",2);
+		final List<Result> list = recipeService.getResultsByRecipe("potato,chips","potato,chips",2);
 		
 //		assertFalse(list.iterator().hasNext());
 //		assertFalse(list.iterator().hasNext());

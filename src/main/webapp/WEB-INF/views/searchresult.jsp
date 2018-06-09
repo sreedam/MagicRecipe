@@ -112,7 +112,7 @@
                                                             <div class="media">
                                                                 <div class="pull-left">
                                                                    
-                              <img  width="30%"  onerror="this.src='<spring:url value="/resources/frontPage/photos/neoremlogo.png" />'"
+                              <img  width="30%"  onerror="this.src='<spring:url value="/resource/images/profile.jpg" />'"
 																		src="${items.thumbnail}"
 																		alt="candidateImage">                                         
                                                                     
