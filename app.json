@@ -1,0 +1,15 @@
+{
+  "name": "MagicRecipe",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}
